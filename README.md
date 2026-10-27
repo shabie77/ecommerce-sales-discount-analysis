@@ -53,8 +53,7 @@ An end-to-end exploratory data analysis (EDA) investigating transactional behavi
 * **Local Reproduction:**
   1. Clone repository:
      ```bash
-     git clone [https://github.com/shabie77/ecommerce-sales-discount-analysis.git](https://github.com/shabie77/ecommerce-sales-discount-analysis.git)
-     cd ecommerce-sales-discount-analysis
+     git clone https://github.com/shabie77/ecommerce-sales-discount-analysis.git
      ```
   2. Install dependencies:
      ```bash
