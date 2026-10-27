@@ -19,10 +19,10 @@ An end-to-end exploratory data analysis (EDA) investigating transactional behavi
 * **Language & Core Libraries:** Python 3.10+, Pandas, NumPy
 * **Data Visualization:** Matplotlib, Seaborn (Histograms, KDE distributions, multi-variable subplots, categorical bar charts)
 * **Statistical & Analytical Techniques:**
-  * Representative sampling estimation and distributional comparison (50k sample vs. 500k population baseline)
+  * Sample estimation and distributional comparison (50k sample vs. 500k population baseline)
   * Robust central tendency evaluation (reporting Medians alongside Means for right-skewed revenue/profit)
   * Categorical aggregation, cohort analysis, and rate-share derivations
-  * Data hygiene: contextual imputation of operational nulls (`return_reason`, `coupon_code`, `customer_feedback`)
+  * Data hygiene: handling missing metadata and contextual imputation of operational fields (`return_reason`, `coupon_code`, `customer_feedback`)
 
 ---
 
@@ -40,15 +40,27 @@ An end-to-end exploratory data analysis (EDA) investigating transactional behavi
 
 ## 📂 Repository Contents
 
-* `EDA_Project_Ecommerce_2025.ipynb`: Fully executed Jupyter Notebook containing data ingestion, cleaning pipelines, summary tables, statistical commentary, and Seaborn visual outputs.
-* `requirements.txt`: Python package dependency specifications.
-* `README.md`: Executive summary and strategic business recommendations.
+* `EDA_Project_Ecommerce_2025.ipynb`: Fully executed Jupyter Notebook containing data ingestion, cleaning pipelines, summary statistics, analytical commentary, and executed Seaborn visual outputs.
+* `Cleaned_Pandas_EDA_2025_Ecom_Dataset.csv`: Structured, cleaned analytical dataset across 62 standardized fields used for exploratory analysis.
+* `requirements.txt`: Python dependency configuration (`pandas`, `numpy`, `matplotlib`, `seaborn`).
+* `README.md`: Executive summary, analytical methodology, and strategic business takeaways.
 
 ---
 
-## 🚀 How to Run the Notebook
+## 🚀 How to View & Run the Analysis
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/shabie77/ecommerce-sales-discount-analysis.git](https://github.com/shabie77/ecommerce-sales-discount-analysis.git)
-   cd ecommerce-sales-discount-analysis
+* **Read-Only / Direct Inspection:** Open `EDA_Project_Ecommerce_2025.ipynb` directly in GitHub to inspect the data transformations, statistical distributions, and visualizations without running code locally.
+* **Local Reproduction:**
+  1. Clone repository:
+     ```bash
+     git clone [https://github.com/shabie77/ecommerce-sales-discount-analysis.git](https://github.com/shabie77/ecommerce-sales-discount-analysis.git)
+     cd ecommerce-sales-discount-analysis
+     ```
+  2. Install dependencies:
+     ```bash
+     pip install -r requirements.txt
+     ```
+  3. Launch Jupyter:
+     ```bash
+     jupyter notebook EDA_Project_Ecommerce_2025.ipynb
+     ```
