@@ -57,7 +57,7 @@ An end-to-end exploratory data analysis (EDA) investigating transactional behavi
      ```
   2. Install dependencies:
      ```bash
-     pip install -r requirements.txt
+     pip install -r REQUIREMENTS.txt
      ```
   3. Launch Jupyter:
      ```bash
